@@ -10,3 +10,23 @@ class Person{
 }
 var s = new Person('test',30);
 s.show();
+//对象
+function f( x, y ) {
+    return { x, y };
+}
+var person = {
+    name: "Nicholas",
+    sayName() {
+        console.log(this.name);
+    }
+};
+
+var lastName = "last name";
+
+var person = {
+    "first name": "Nicholas",
+    [lastName]: "Zakas"
+};
+
+console.log(person["first name"]);      // "Nicholas"
+console.log(person[lastName]);          // "Zakas"
